@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../image/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+        <div class="top-header">
+            <img class="saya" src="../image/saya.jpeg" alt="Picture Me" title="Me">
+            <h1>M. Bintang Alfarisyi</h1>
+            <h3>Programmer</h3>
+        </div>
+        <div class="main-header">
+            <ul>
+                <li><a href="../index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="../about/index.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li><a href="#"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                <li><a href="../hobby/index.html"><i class="fa-solid fa-gamepad"></i> Hobby</a></li>
+                <li><a href="../skills/index.html"><i class="fa-solid fa-code"></i> Skills</a></li>
+                <li><a href="../education/index.html"><i class="fa-solid fa-school"></i> Education</a></li>
+                <li><a href="../friend/index.html"><i class="fa-solid fa-user-group"></i> Friend</a></li>
+                <li><a href="../account/index.html"><i class="fa-solid fa-circle-user"></i> Account</a></li>
+                <li><a href="../referrence/index.html"><i class="fa-solid fa-paper-plane"></i> Referrence</a></li>
+                <li><a href="../contact/index.html"><i class="fa-solid fa-envelopes"></i><i class="fa-solid fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- Galerry -->
+    <div class="gallery-section">
+        <div class="inner-width">
+            <h4></h4>
+            <h1>My Waifu</h1>
+            <div class="gallery">
+                <a href="../image/istri1.jpeg" class="image">
+                    <img src="../image/istri1.jpeg" alt="Istri" title="Istri Ke-1">
+                </a>
+                <a href="../image/istri2.jpg" class="image">
+                    <img src="../image/istri2.jpg" alt="Istri" title="Istri Ke-2">
+                </a>
+                <a href="../image/istri3.jpg" class="image">
+                    <img src="../image/istri3.jpg" alt="Istri" title="Istri Ke-3">
+                </a>
+                <a href="../image/istri4.jpeg" class="image">
+                    <img src="../image/istri4.jpeg" alt="Istri" title="Istri Ke-4">
+                </a>
+                <a href="../image/istri5.jpg" class="image">
+                    <img src="../image/istri5.jpg" alt="Istri" title="Istri Ke-5">
+                </a>
+                <a href="../image/istri6.jpeg" class="image">
+                    <img src="../image/istri6.jpeg" alt="Istri" title="Istri Ke-6">
+                </a>
+                <a href="../image/istri7.jpg" class="image">
+                    <img src="../image/istri7.jpg" alt="Istri" title="Istri Ke-7">
+                </a>
+                <a href="../image/istri8.jpg" class="image">
+                    <img src="../image/istri8.jpg" alt="Istri" title="Istri Ke-8">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com/bintang.alfarisyi26" class="fa-brands fa-instagram"></a>
+            <a href="https://twitter.com/BintangAlfaris7?t=iSlyxD1HE533lC9dryVMVg&s=08" class="fa-brands fa-twitter"></a>
+            <a href="https://www.facebook.com/profile.php?id=100055221580786" class="fa-brands fa-facebook"></a>
+            <a href="https://github.com/BintangAlfarisyi" class="fa-brands fa-github"></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="../address/index.html">Address</a>
+            </li>
+            <li>
+                <a href="../contact/index.html">Contact</a>
+            </li>
+        </ul>
+        <p class="copyright">
+            <i class="fa-regular fa-copyright"></i> 2022 Bintang Alfarisyi.
+        </p>
+    </section>
+
+    <!-- Script JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Script JS -->
+    <script>
+        $(document).ready(function(){
+            $('#menu').click(function(){
+                $(this).toggleClass('fa-times')
+                $('.sidebar').toggleClass('toggle')
+            })
+
+        $(window).on('scroll load',function(){
+                $('#menu').removeClass('fa-times')
+                $('.sidebar').removeClass('toggle')
+        })
+    })
+
+    $(".gallery").magnificPopup({
+            delgate: 'a', 
+            type: 'image', 
+            gallry:{
+                enable: ture 
+            }
+        })
+    </script>
+
+</body>
+</html>
